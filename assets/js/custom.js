@@ -1,3 +1,93 @@
+
+var blockRadios1=document.getElementById('blockRadios1');
+var blockRadios2=document.getElementById('blockRadios2');
+
+var blockRadiosEn1=document.getElementById('blockRadiosEn1');
+var blockRadiosEn2=document.getElementById('blockRadiosEn2');
+
+var blockRadiosHi1=document.getElementById('blockRadiosHi1');
+var blockRadiosHi2=document.getElementById('blockRadiosHi2');
+
+
+var block_code_container_id=document.getElementById('block_code_container_id');
+var block_name_en_container_id=document.getElementById('block_name_en_container_id');
+var block_name_hi_container_id=document.getElementById('block_name_hi_container_id');
+
+
+
+
+var tehsilRadios1=document.getElementById('tehsilRadios1');
+var tehsilRadios2=document.getElementById('tehsilRadios2');
+
+var tehsilRadiosEn1=document.getElementById('tehsilRadiosEn1');
+var tehsilRadiosEn2=document.getElementById('tehsilRadiosEn2');
+
+var tehsilRadiosHi1=document.getElementById('tehsilRadiosHi1');
+var tehsilRadiosHi2=document.getElementById('tehsilRadiosHi2');
+
+
+var tehsil_code_container_id=document.getElementById('tehsil_code_container_id');
+var tehsil_name_en_container_id=document.getElementById('tehsil_name_en_container_id');
+var tehsil_name_hi_container_id=document.getElementById('tehsil_name_hi_container_id');
+
+
+
+
+
+
+var grampanchayatRadios1=document.getElementById('grampanchayatRadios1');
+var grampanchayatRadios2=document.getElementById('grampanchayatRadios2');
+
+var grampanchayatRadiosEn1=document.getElementById('grampanchayatRadiosEn1');
+var grampanchayatRadiosEn2=document.getElementById('grampanchayatRadiosEn2');
+
+var grampanchayatRadiosHi1=document.getElementById('grampanchayatRadiosHi1');
+var grampanchayatRadiosHi2=document.getElementById('grampanchayatRadiosHi2');
+
+
+var grampanchayat_code_container_id=document.getElementById('grampanchayat_code_container_id');
+var grampanchayat_name_en_container_id=document.getElementById('grampanchayat_name_en_container_id');
+var grampanchayat_name_hi_container_id=document.getElementById('grampanchayat_name_hi_container_id');
+
+
+
+
+
+
+
+var gramRadios1=document.getElementById('gramRadios1');
+var gramRadios2=document.getElementById('gramRadios2');
+
+var gramRadiosEn1=document.getElementById('gramRadiosEn1');
+var gramRadiosEn2=document.getElementById('gramRadiosEn2');
+
+var gramRadiosHi1=document.getElementById('gramRadiosHi1');
+var gramRadiosHi2=document.getElementById('gramRadiosHi2');
+
+
+var gram_code_container_id=document.getElementById('gram_code_container_id');
+var gram_name_en_container_id=document.getElementById('gram_name_en_container_id');
+var gram_name_hi_container_id=document.getElementById('gram_name_hi_container_id');
+
+
+
+
+
+var village_type_Radios1=document.getElementById('village_typeRadios1');
+var village_type_Radios2=document.getElementById('village_typeRadios2');
+
+var village_type__code_container_id=document.getElementById('village_type__code_container_id');
+
+
+
+
+var ward_Radios1=document.getElementById('wardRadios1');
+var ward_Radios2=document.getElementById('wardRadios2');
+
+var ward_code_container_id=document.getElementById('ward_code_container_id');
+
+
+
 function openTargetTools() {
     document.getElementById("TargetSidebar").style.width = "300px";
     document.getElementById("TargetSidebar").style.height = "300px";
@@ -34,6 +124,11 @@ function openTargetTools() {
   function closeMaterialNav() {
     document.getElementById("MaterialSidebar").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
+  }
+
+  function closeFormNav()
+  {
+    document.getElementById("IssueSidebar").style.width = "0";
   }
 
   function openReportTools() {
@@ -79,7 +174,157 @@ function openTargetTools() {
 
 
 
+
+
+  blockRadios1.addEventListener("click", function() {
+    block_code_container_id.style.display= "block";
+  });
+
+
+  blockRadios2.addEventListener("click", function() {
+    block_code_container_id.style.display= "none";
+  });
+
+
+  blockRadiosEn1.addEventListener("click", function() {
+    block_name_en_container_id.style.display= "block";
+  });
+
+  blockRadiosEn2.addEventListener("click", function() {
+    block_name_en_container_id.style.display= "none";
+  });
+
+  blockRadiosHi1.addEventListener("click", function() {
+    block_name_hi_container_id.style.display= "block";
+  });
+
+  blockRadiosHi2.addEventListener("click", function() {
+    block_name_hi_container_id.style.display= "none";
+  });
+
+  
+  // tehsil events
+
+
+  tehsilRadios1.addEventListener("click", function() {
+    tehsil_code_container_id.style.display= "block";
+  });
+
+
+  tehsilRadios2.addEventListener("click", function() {
+    tehsil_code_container_id.style.display= "none";
+  });
+
+
+  tehsilRadiosEn1.addEventListener("click", function() {
+    tehsil_name_en_container_id.style.display= "block";
+  });
+
+  tehsilRadiosEn2.addEventListener("click", function() {
+    tehsil_name_en_container_id.style.display= "none";
+  });
+
+  tehsilRadiosHi1.addEventListener("click", function() {
+    tehsil_name_hi_container_id.style.display= "block";
+  });
+
+  tehsilRadiosHi2.addEventListener("click", function() {
+    tehsil_name_hi_container_id.style.display= "none";
+  });
+
  
+
+   // grampanchayt events
+
+   grampanchayatRadios1.addEventListener("click", function() {
+    grampanchayat_code_container_id.style.display= "block";
+  });
+
+
+  grampanchayatRadios2.addEventListener("click", function() {
+    grampanchayat_code_container_id.style.display= "none";
+  });
+
+
+  grampanchayatRadiosEn1.addEventListener("click", function() {
+    grampanchayat_name_en_container_id.style.display= "block";
+  });
+
+  grampanchayatRadiosEn2.addEventListener("click", function() {
+    grampanchayat_name_en_container_id.style.display= "none";
+  });
+
+  grampanchayatRadiosHi1.addEventListener("click", function() {
+    grampanchayat_name_hi_container_id.style.display= "block";
+  });
+
+  grampanchayatRadiosHi2.addEventListener("click", function() {
+    grampanchayat_name_hi_container_id.style.display= "none";
+  });
+
+
+    // gram events
+
+
+    gramRadios1.addEventListener("click", function() {
+      gram_code_container_id.style.display= "block";
+    });
+  
+  
+    gramRadios2.addEventListener("click", function() {
+      gram_code_container_id.style.display= "none";
+    });
+  
+  
+    gramRadiosEn1.addEventListener("click", function() {
+      gram_name_en_container_id.style.display= "block";
+    });
+  
+    gramRadiosEn2.addEventListener("click", function() {
+      gram_name_en_container_id.style.display= "none";
+    });
+  
+    gramRadiosHi1.addEventListener("click", function() {
+      gram_name_hi_container_id.style.display= "block";
+    });
+  
+    gramRadiosHi2.addEventListener("click", function() {
+      gram_name_hi_container_id.style.display= "none";
+    });
+
+
+
+
+    // village type events
+
+
+    village_typeRadios1.addEventListener("click", function() {
+      village_type_code_container_id.style.display= "block";
+    });
+  
+  
+    village_typeRadios2.addEventListener("click", function() {
+      village_type_code_container_id.style.display= "none";
+    });
+
+
+
+     // ward events
+
+
+     ward_Radios1.addEventListener("click", function() {
+      ward_code_container_id.style.display= "block";
+    });
+  
+  
+    ward_Radios2.addEventListener("click", function() {
+      ward_code_container_id.style.display= "none";
+    });
+  
+  
+  
+
+
     function closeCard() {
       const card = document.getElementById('info-box');
       card.style.display = 'none';
